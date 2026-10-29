@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 一键启动中医查询网站（MariaDB + Bun 全栈后端 + 内置静态前端）
+# 一键启动岐黄阁（MariaDB + Bun 全栈后端 + 内置静态前端）
 set -u
 BUN="/c/Users/one/.bun/bun.exe"
 MARIA="/c/Users/one/.mariadb"
@@ -30,6 +30,6 @@ fi
 
 echo ""
 echo "============================================="
-echo " 中医查询网站已就绪"
+echo " 岐黄阁已就绪"
 echo " 浏览器打开: http://127.0.0.1:3801/"
 echo "============================================="
