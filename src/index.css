@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 28 30% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 28 30% 14%;
+
+    --primary: 14 64% 46%;
+    --primary-foreground: 40 33% 98%;
+
+    --secondary: 38 30% 92%;
+    --secondary-foreground: 28 30% 20%;
+
+    --muted: 38 24% 94%;
+    --muted-foreground: 30 10% 42%;
+
+    --accent: 38 44% 88%;
+    --accent-foreground: 28 30% 18%;
+
+    --border: 36 24% 86%;
+    --input: 36 24% 86%;
+    --ring: 14 64% 46%;
+
+    --tcm-paper: 40 40% 96%;
+    --tcm-ink: 25 35% 18%;
+    --tcm-gold: 41 56% 48%;
+    --tcm-jade: 158 32% 38%;
+    --tcm-cinnabar: 8 70% 45%;
+
+    --radius: 0.6rem;
+  }
+
+  .dark {
+    --background: 25 20% 10%;
+    --foreground: 40 20% 92%;
+
+    --card: 25 18% 13%;
+    --card-foreground: 40 20% 92%;
+
+    --primary: 14 60% 52%;
+    --primary-foreground: 25 20% 10%;
+
+    --secondary: 25 14% 20%;
+    --secondary-foreground: 40 20% 90%;
+
+    --muted: 25 14% 18%;
+    --muted-foreground: 38 12% 65%;
+
+    --accent: 25 16% 22%;
+    --accent-foreground: 40 20% 90%;
+
+    --border: 25 14% 24%;
+    --input: 25 14% 24%;
+    --ring: 14 60% 52%;
+
+    --tcm-paper: 25 18% 14%;
+    --tcm-ink: 40 20% 90%;
+    --tcm-gold: 41 50% 55%;
+    --tcm-jade: 158 30% 48%;
+    --tcm-cinnabar: 8 65% 55%;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "palt";
+  }
+  ::selection {
+    @apply bg-tcm-gold/30;
+  }
+}
+
+@layer components {
+  .paper-card {
+    @apply rounded-lg border border-border bg-card shadow-sm;
+  }
+  .prose-tcm {
+    @apply leading-8 text-foreground/90;
+  }
+  .prose-tcm p {
+    @apply mb-4;
+  }
+  .prose-tcm b,
+  .prose-tcm strong {
+    @apply font-semibold text-tcm-cinnabar;
+  }
+  .nav-link {
+    @apply flex items-center gap-3 rounded-md px-3 py-2 text-sm text-foreground/75 transition-colors hover:bg-accent hover:text-foreground;
+  }
+  .nav-link-active {
+    @apply bg-primary/10 text-primary font-medium hover:bg-primary/15;
+  }
+}
+
+/* 细滚动条 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
