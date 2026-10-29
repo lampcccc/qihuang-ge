@@ -4,9 +4,9 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lampcccc/-tcm-site.git"
+    "url": "git+https://github.com/lampcccc/tcm-site.git"
   },
-  "homepage": "https://github.com/lampcccc/-tcm-site",
+  "homepage": "https://github.com/lampcccc/tcm-site",
   "type": "module",
   "scripts": {
     "dev": "vite",
