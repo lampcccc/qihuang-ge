@@ -1,12 +1,12 @@
 {
-  "name": "tcm-query-site",
+  "name": "qihuang-ge",
   "version": "1.0.0",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lampcccc/tcm-site.git"
+    "url": "git+https://github.com/lampcccc/qihuang-ge.git"
   },
-  "homepage": "https://github.com/lampcccc/tcm-site",
+  "homepage": "https://github.com/lampcccc/qihuang-ge",
   "type": "module",
   "scripts": {
     "dev": "vite",
