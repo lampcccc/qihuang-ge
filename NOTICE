@@ -1,0 +1,15 @@
+TCM Query Site
+Copyright 2026 lampcccc
+
+This product includes software developed at the TCM Query Site project.
+
+Third-party software bundled in this project is distributed under their
+respective licenses (see package.json for the full dependency list):
+  - React, React DOM                                        (MIT)
+  - React Router                                            (MIT)
+  - Tailwind CSS                                            (MIT)
+  - lucide-react                                            (ISC)
+  - Radix UI primitives (@radix-ui/*)                       (MIT)
+  - framer-motion                                           (MIT)
+  - class-variance-authority, clsx, tailwind-merge          (MIT)
+  - bun:sqlite                                              (MIT, part of the Bun runtime)
