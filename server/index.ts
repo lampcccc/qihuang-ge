@@ -1018,7 +1018,7 @@ const fetchHandler = async (req: Request) => {
   }
   const st = await serveStatic(url.pathname);
   if (st) return st;
-  return new Response("TCM Query Server. Frontend not built. Run `bun run build` then `bun run start`.", {
+  return new Response("岐黄阁 (Qihuang Ge) — 前端尚未构建。请先执行 `bun run build`，再运行 `bun run start`。", {
     headers: { "Content-Type": "text/plain; charset=utf-8" },
   });
 };
